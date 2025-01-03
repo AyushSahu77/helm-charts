@@ -35,8 +35,8 @@ apiServer:
   args: []
   resources:
     requests:
-      cpu: "2"
-      memory: 5Gi
+      cpu: "0.5"
+      memory: 2Gi
     limits:
       cpu: "4"
       memory: 5Gi
