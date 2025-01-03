@@ -197,7 +197,7 @@ frontend:
 ingress:
   enabled: true
   annotations: {}
-  hostname: "zpoc.gonuclei.com"
+  hostname: "zpoc-devops.gonuclei.com"
   ingressClassName: "nginx"
   tls: []
   #  - secretName: dt-tls
