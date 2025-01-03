@@ -195,10 +195,10 @@ frontend:
   nodeSelector: {}
 
 ingress:
-  enabled: false
+  enabled: true
   annotations: {}
-  hostname: "example.com"
-  ingressClassName: ""
+  hostname: "zpoc.gonuclei.com"
+  ingressClassName: "nginx"
   tls: []
   #  - secretName: dt-tls
   #    hosts:
