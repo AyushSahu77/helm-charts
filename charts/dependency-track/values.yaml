@@ -196,7 +196,9 @@ frontend:
 
 ingress:
   enabled: true
-  annotations: {}
+  annotations: {
+    nginx.ingress.kubernetes.io/whitelist-source-range: 20.40.41.204/32
+  }
   hostname: "zpoc-devops.gonuclei.com"
   ingressClassName: "nginx"
   tls: []
