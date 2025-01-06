@@ -53,8 +53,8 @@ that allows organizations to identify and reduce risk in the software supply cha
 | apiServer.probes.readiness.timeoutSeconds | int | `5` |  |
 | apiServer.resources.limits.cpu | string | `"4"` |  |
 | apiServer.resources.limits.memory | string | `"5Gi"` |  |
-| apiServer.resources.requests.cpu | string | `"2"` |  |
-| apiServer.resources.requests.memory | string | `"5Gi"` |  |
+| apiServer.resources.requests.cpu | string | `"0.5"` |  |
+| apiServer.resources.requests.memory | string | `"2Gi"` |  |
 | apiServer.securityContext | object | `{"allowPrivilegeEscalation":false,"capabilities":{"drop":["ALL"]},"readOnlyRootFilesystem":true,"runAsNonRoot":true,"seccompProfile":{"type":"RuntimeDefault"}}` | Security context of the Container. |
 | apiServer.service.annotations | object | `{}` |  |
 | apiServer.service.nodePort | string | `nil` |  |
@@ -111,9 +111,9 @@ that allows organizations to identify and reduce risk in the software supply cha
 | frontend.service.nodePort | string | `nil` |  |
 | frontend.service.type | string | `"ClusterIP"` |  |
 | frontend.tolerations | list | `[]` |  |
-| ingress.annotations | object | `{}` |  |
-| ingress.enabled | bool | `false` |  |
-| ingress.hostname | string | `"example.com"` |  |
-| ingress.ingressClassName | string | `""` |  |
+| ingress.annotations."nginx.ingress.kubernetes.io/whitelist-source-range" | string | `"20.40.41.204/32"` |  |
+| ingress.enabled | bool | `true` |  |
+| ingress.hostname | string | `"zpoc-devops.gonuclei.com"` |  |
+| ingress.ingressClassName | string | `"nginx"` |  |
 | ingress.tls | list | `[]` |  |
 
